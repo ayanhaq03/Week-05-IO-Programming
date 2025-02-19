@@ -23,7 +23,7 @@ public class ListToJsonFile {
         List<Person> people = Arrays.asList(new Person("Alice", 28), new Person("Bob", 22));
 
         // Write JSON array to file
-        objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File("people.json"), people);
+        objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File("src/main/java/com/practice_problems/convert_list_of_objects_into_json/people.json"), people);
         System.out.println("JSON written to people.json");
     }
 }
